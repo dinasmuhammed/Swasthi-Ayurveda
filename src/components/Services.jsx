@@ -1,36 +1,36 @@
 import React from 'react';
 
 const ServiceCard = ({ title, description }) => (
-  <div className="bg-white p-6 rounded-lg shadow-md">
-    <h3 className="text-xl font-semibold mb-2">{title}</h3>
-    <p>{description}</p>
+  <div className="bg-white p-6 rounded-lg shadow-md border border-[#9CBA9D]">
+    <h3 className="text-xl font-semibold mb-2 text-[#9CBA9D]">{title}</h3>
+    <p className="text-[#9CBA9D]">{description}</p>
   </div>
 );
 
 const Services = () => {
   const services = [
     {
-      title: "Relaxation Massage",
-      description: "Unwind with our signature massage, designed to melt away stress and tension."
+      title: "Panchakarma Therapy",
+      description: "Experience deep cleansing and rejuvenation with our authentic Panchakarma treatments."
     },
     {
-      title: "Rejuvenating Facial",
-      description: "Revitalize your skin with our nourishing facial treatments, tailored to your skin type."
+      title: "Ayurvedic Consultation",
+      description: "Receive personalized health advice based on your unique Ayurvedic constitution."
     },
     {
-      title: "Ayurvedic Therapies",
-      description: "Experience the healing power of ancient Ayurvedic treatments for holistic wellness."
+      title: "Herbal Remedies",
+      description: "Benefit from our carefully crafted herbal preparations to support your wellness journey."
     },
     {
-      title: "Body Wraps",
-      description: "Detoxify and hydrate your body with our luxurious and therapeutic body wraps."
+      title: "Ayurvedic Massage",
+      description: "Indulge in therapeutic massages using traditional techniques and herbal oils."
     }
   ];
 
   return (
     <section id="services" className="py-16 bg-[#9CBA9D]">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-serif text-center text-[#6F4F28] mb-12">Our Services</h2>
+        <h2 className="text-4xl font-serif text-center text-white mb-12">Our Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
