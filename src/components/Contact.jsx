@@ -3,11 +3,11 @@ import { MapPin, Phone } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-16 bg-white">
+    <section id="contact" className="py-16 bg-secondary">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-serif text-center text-[#9CBA9D] mb-12">Contact Us</h2>
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-8 md:mb-0 text-[#9CBA9D]">
+        <h2 className="text-4xl font-serif text-center text-primary mb-12 slide-in">Contact Us</h2>
+        <div className="flex flex-col md:flex-row justify-between items-center fade-in">
+          <div className="mb-8 md:mb-0 text-primary">
             <p className="flex items-center mb-4">
               <Phone className="mr-2" /> <span className="text-lg">☎️ 8138814322</span>
             </p>
